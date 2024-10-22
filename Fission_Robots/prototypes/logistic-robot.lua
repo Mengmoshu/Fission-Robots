@@ -6,14 +6,15 @@ data:extend(
         type = "recipe",
         name = "logistic-robot-fission",
         enabled = false,
+        allow_quality = false,
         ingredients =
         {
-            {"flying-robot-frame", 1},
-            {"advanced-circuit", 2},
-            {"processing-unit", 5},
-            {"uranium-fuel-cell", 2}
+            {type = "item", name = "flying-robot-frame", amount = 1},
+            {type = "item", name = "advanced-circuit", amount =  2},
+            {type = "item", name = "processing-unit", amount =  5},
+            {type = "item", name = "uranium-fuel-cell", amount =  2}
         },
-        result = "logistic-robot-fission"
+        results = {{type = "item", name = "logistic-robot-fission", amount = 1}}
     },
 
 -- Item
